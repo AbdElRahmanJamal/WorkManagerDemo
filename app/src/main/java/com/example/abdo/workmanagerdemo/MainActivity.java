@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         PeriodicWorkRequest.Builder addingNumberWorker =
                 new PeriodicWorkRequest.Builder(AddingNumbersWorker.class, 16,
                         TimeUnit.MINUTES);
-        
+
         PeriodicWorkRequest addingWorker = addingNumberWorker.build();
 
         WorkManager.getInstance().enqueue(addingWorker);
