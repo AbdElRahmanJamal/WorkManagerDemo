@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="15dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:onClick="OneTimeWorkRequest"
+        android:padding="2dp"
+        android:text="One Time Wor kRequest"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:onClick="OneTimeWorkRequestWithConstraints"
+        android:padding="2dp"
+        android:text="Work Request With Constraints"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:onClick="PeriodicWorkRequest"
+        android:padding="2dp"
+        android:text="Periodic Work Request"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:onClick="sequenceChainedTask"
+        android:padding="2dp"
+        android:text="sequence Chained Task"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:onClick="parallelChainedTask"
+        android:padding="2dp"
+        android:text="parallel Chained Task"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:onClick="workContinuation"
+        android:padding="2dp"
+        android:text="work Continuation"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:onClick="inputParametersAndReturnedValuesUsingWorkManger"
+        android:padding="2dp"
+        android:text="send Parameters UsingWorkManger"
+        android:textAllCaps="false" />
+</LinearLayout>
