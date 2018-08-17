@@ -30,29 +30,22 @@ work manager advantages
         4- enqueue the work
         */
         
----------------------------------------------------------------------------------------------------------------------------------------
+## Canceling a Task
 
-to Canceling a Task
-
-/* 
 UUID urworkmanagerID = urWorkManager.getId();
 WorkManager.getInstance().cancelWorkById(urworkmanagerID);
-*/
---------------------------------------------------------------------------------------------------------------------------------------
- If you need to check on the task status, you can get a WorkStatus object by getting a handle to the appropriate LiveData<WorkStatus>
+
+## check on the task status 
+
+using LiveData<WorkStatus> sample code:
  
- sample code:
- /*
- WorkManager.getInstance().getStatusById(urWorkManager.getId())
-    .observe(lifecycleOwner, workStatus -> {
-        if (workStatus != null && workStatus.getState().isFinished()) {
-            // ...
-            //update ui 
-            //do anything with result
-        }
-    });
-    */
---------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------
+        WorkManager.getInstance().getStatusById(urWorkManager.getId())
+          .observe(lifecycleOwner, workStatus -> {
+              if (workStatus != null && workStatus.getState().isFinished()) {
+                  // ...
+                  //update ui 
+                  //do anything with result
+              }
+          });
+          
 ## Finally to see result of work manager please see logcat
